@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from tqdm import tqdm
-from ..bitlinear import BitLinear
+from bitmat.bitlinear import BitLinear
 
 from transformers import AutoModel, GemmaConfig, MistralConfig, LlamaConfig
 

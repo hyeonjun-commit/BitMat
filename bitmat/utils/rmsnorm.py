@@ -1,5 +1,5 @@
 import torch
-from ..triton_kernels.rmsnorm_kernel import fast_rms_layernorm
+from bitmat.triton_kernels.rmsnorm_kernel import fast_rms_layernorm
 
 
 class RMSLayerNorm(torch.nn.Module):

@@ -2,7 +2,7 @@ from typing import Tuple
 
 import torch
 
-from ..triton_kernels.bitmat_kernel import bitmat_
+from bitmat.triton_kernels.bitmat_kernel import bitmat_
 from .packing import pack_ternary
 
 

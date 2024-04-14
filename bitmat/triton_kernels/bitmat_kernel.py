@@ -2,7 +2,7 @@
 import torch
 import triton
 import triton.language as tl
-from ..utils import custom_autotune
+from bitmat.utils import custom_autotune
 @custom_autotune.autotune(
         configs=[
             triton.Config({"BLOCK_SIZE_M": 16, "BLOCK_SIZE_N": 16, "BLOCK_SIZE_K": 32, "GROUP_SIZE_M": 8},num_stages=1,num_warps=4),

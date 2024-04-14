@@ -4,7 +4,7 @@ from bitmat.utils.bitmat import *
 from bitmat.utils.packing import *
 from bitmat.utils.custom_autotune import *
 from bitmat.bitlinear import BitLinear
-from ..triton_kernels.bitmat_kernel import bitmat_
+from bitmat.triton_kernels.bitmat_kernel import bitmat_
 
 def test_kernel_bitlinear():
     class FakeRMSLayerNorm(torch.nn.Module):
